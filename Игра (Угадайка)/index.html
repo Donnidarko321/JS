@@ -1,0 +1,29 @@
+<!doctype html>
+<meta charset="utf-8">
+<script>
+
+let i=0;
+let count=0;
+var n=parseInt(Math.random()*9);
+while(count!=3){
+	if(answ==(n+1)){
+		alert("Ты угадал!");
+		i++;
+		break;
+	}else if(answ<(n+1)){
+		count++;
+		alert("Больше, попробуй еще! Попыток: "+(4-count));
+	}else if(answ>(n+1)){
+		count++;
+		alert("Меньше, попробуй еще! Попыток: "+(4-count));
+	}
+	var answ=+prompt("Я загадал число от 1 до 10");
+}
+if(i==0){
+alert("ты проиграл!");
+}else{
+alert("ты выйграл!");
+}
+document.write("Я загадал: "+(n+1));
+alert("Я загадал: "+(n+1));
+</script>
