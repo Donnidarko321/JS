@@ -1,0 +1,27 @@
+<!doctype html>
+<meta charset="utf-8">
+<script>
+var arr=[
+["food","еда"],
+["bike","байк"],
+["do","делать"],
+];
+let i=0;
+let j=0;
+while(answ!="stop"){
+	var n=parseInt(Math.random()*arr.length);
+	var answ=prompt("переведи "+arr[n][0]);
+	if(answ==arr[n][1]){
+		alert("good");
+		i++;
+	}else if(answ=="stop"){
+		alert("stop");
+	}else{
+		j++;
+		alert("no, answer is "+arr[n][1]);
+	}
+}
+
+document.write("Ты угадал: "+i+"<br>");
+document.write("Ты ошибся: "+j);
+</script>
