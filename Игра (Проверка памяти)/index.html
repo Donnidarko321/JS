@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script>
+var arr=[22,33,44,55];
+alert("Запомни порядок "+arr);
+let i=0;
+let g=0;
+while(i!=5){
+	var n=parseInt(Math.random()*arr.length);
+	var a=+prompt("Под каким номером число №"+arr[n]);
+	if((n+1)==a){
+	i++;
+	g++;
+		alert("Правильно");
+	}else{
+	i++;
+		alert("Попробуй снова");
+	}
+}
+document.write("Ты угадал: "+g+"<br>");
+document.write("Ты ошибся: "+(i-g));
+</script>
